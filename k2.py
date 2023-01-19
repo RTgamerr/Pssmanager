@@ -24,6 +24,7 @@ class cmd2(cmd.Cmd):
    self.username = {}
    self.password = {}
 
+    
    try:
     with open('psx2z.txt', 'wb') as file0:
         contents = file0.write(username, password)
@@ -41,6 +42,8 @@ class cmd2(cmd.Cmd):
        return content0()
     except:
       print('[-] an error has occured')
+      
+      
   def do_help():
     print(''' 
     save - this command saves your cridentials in this format 'save <email> <password>'
